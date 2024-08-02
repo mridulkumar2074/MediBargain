@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap");
+
+/*   color variables */
+
+
+/*   border radius */
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Noto Sans", sans-serif;
+  color: black;
+}
+
+.wrapper {
+  margin: 2rem;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+  justify-content: center;
+}
+
+.card {
+  box-shadow: 0px 0px 10px 5px rgba(204, 204, 204, 0.926);
+  border-radius: 5px;
+  background-color: white;
+  min-width: 28rem;
+  display: flex;
+  border-width:5px ;
+  border-style:solid;
+  border-color:goldenrod;
+
+ margin-bottom: auto;
+  margin: 1rem;
+  flex-grow: 1;
+  
+}
+  
+  
+    .card__img {
+    width: 14rem;
+    height: 14rem;
+    object-fit: cover;
+    border-bottom:5px solid goldenrod;
+    margin-bottom:1rem;
+
+  }
+
+  
+  .card__title {
+    font-size:1.1rem;
+    line-height: 1.4rem;
+    margin-bottom: 0.5rem;
+    height: 60px;
+    background-color: white;
+  }
+ .card__description {
+    line-height: 1rem;
+  }
+  .card__price {
+    font-size: 1.1rem;
+    margin-top: 0.6rem;
+    background-color: white;
+
+    &::before {
+      content: "";
+      font-size: 1rem;
+      position: relative;
+      top: -0.3rem;
+      padding-right: 0.1rem;
+    }
+  }
+
+ .card__btn {
+    border:none;
+    border-top: 5px solid goldenrod;
+    background-color: white;
+    font-family: inherit;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: inherit;
+    width: 100%;
+    padding-top: 1rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    margin-bottom:1rem;
+ }
+    
+ .card__btn:hover{
+    color:goldenrod;
+ } 
+ 
+  
+
+@media screen and (min-width: 600px) {
+  .wrapper {
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1rem));
+  }
+
+  .card {
+    flex-direction: column;
+    text-align: center;
+    min-width: 14rem;
+
+    .card__img {
+      width: 100%;
+      height: 12rem;
+    }
+  }
+}

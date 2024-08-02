@@ -1,0 +1,21 @@
+.about {
+    margin-left: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin-bottom:80px;
+}
+.about-left{
+    flex-basis: 50%;
+margin-left:80px;
+
+}
+.about-right {
+    flex-basis: 50%;
+    margin-left: 20px;
+}
+.about-img {
+    width: 100%;
+    border: 10px;
+}

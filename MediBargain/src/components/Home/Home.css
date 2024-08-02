@@ -1,0 +1,81 @@
+.homes {
+    margin: 80px auto;
+    width: auto;
+    display: flexbox; /* Set display to flex */
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.home-1 {
+    display: flex; /* Set display to flex */
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 50px;
+}
+
+.home1-info-content {
+    margin-left: 20px; /* Adjust margin as needed */
+    width: calc(50% - 20px); /* Calculate the width to fill the remaining space */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10;
+}
+
+.home1-info-content p{
+    animation: 1s slide-left 1s forwards;
+    transform: translateX(100%);
+}
+@keyframes slide-left {
+    to {
+      transform: translateX(0); /* Slide in from left */
+    }
+}
+
+.home-1 img {
+    width: 50%; /* Maintain the image width */
+    margin-left: 0;
+    border-radius: 10px;
+    float:left;
+}
+.home-2 img {
+    margin-right: 0;
+    width: 50%;
+    border-radius: 10px;
+    float:right;
+}
+
+.how-it-works{
+    margin-right: 20px; /* Adjust margin as needed */
+    margin-left: 20px;
+    width: calc(50% - 20px); /* Calculate the width to fill the remaining space */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10;
+}
+
+.how-it-works p{
+    animation: 1s slide-right 1s forwards;
+    transform: translateX(-100%);
+}
+@keyframes slide-right {
+    to {
+      transform: translateX(0); /* slide in from right */
+    }
+}
+
+.home-end
+{
+    background-color:  rgba(164, 93, 12, 1.0);
+    color: white;
+    transition: background-color .5s ease-in-out;
+    margin: 100px;
+    margin-left: 0;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    align-items: center;
+}
